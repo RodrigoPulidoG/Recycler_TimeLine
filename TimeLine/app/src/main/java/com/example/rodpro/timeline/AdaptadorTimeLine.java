@@ -35,9 +35,9 @@ public class AdaptadorTimeLine extends RecyclerView.Adapter<AdaptadorTimeLine.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderTimeLine holder, int position) {
-        holder.time.setText(eventos.get(position).getTime());
-        holder.date.setText(eventos.get(position).getDate());
-        holder.edn.setText(eventos.get(position).getEdn());
+        holder.etiTime.setText(eventos.get(position).getTime());
+        holder.etiDate.setText(eventos.get(position).getDate());
+        holder.etiEdn.setText(eventos.get(position).getEdn());
         holder.imagenIcon.setImageResource(eventos.get(position).getIcon());
 
     }
@@ -51,14 +51,14 @@ public class AdaptadorTimeLine extends RecyclerView.Adapter<AdaptadorTimeLine.Vi
     public class ViewHolderTimeLine extends RecyclerView.ViewHolder {
 
         ImageView imagenIcon;
-        TextView time,date,edn;
+        TextView etiTime,etiDate,etiEdn;
 
         public ViewHolderTimeLine(View itemView) {
             super(itemView);
             imagenIcon = (ImageView)itemView.findViewById(R.id.idImage);
-            time = (EditText)itemView.findViewById(R.id.textTime);
-            date = (EditText)itemView.findViewById(R.id.textDate);
-            edn = (EditText)itemView.findViewById(R.id.textEdn);
+            etiTime = (EditText)itemView.findViewById(R.id.textTime);
+            etiDate = (EditText)itemView.findViewById(R.id.textDate);
+            etiEdn = (EditText)itemView.findViewById(R.id.textEdn);
         }
     }
 }
