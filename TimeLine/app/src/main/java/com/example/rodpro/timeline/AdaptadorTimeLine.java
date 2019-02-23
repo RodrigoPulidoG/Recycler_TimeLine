@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by RodPro on 22/2/2019.
- */
 
 public class AdaptadorTimeLine extends RecyclerView.Adapter<AdaptadorTimeLine.ViewHolderTimeLine>{
 
@@ -55,10 +52,10 @@ public class AdaptadorTimeLine extends RecyclerView.Adapter<AdaptadorTimeLine.Vi
 
         public ViewHolderTimeLine(View itemView) {
             super(itemView);
-            imagenIcon = (ImageView)itemView.findViewById(R.id.idImage);
-            etiTime = (EditText)itemView.findViewById(R.id.textTime);
-            etiDate = (EditText)itemView.findViewById(R.id.textDate);
-            etiEdn = (EditText)itemView.findViewById(R.id.textEdn);
+            imagenIcon = itemView.findViewById(R.id.idImage);
+            etiTime = itemView.findViewById(R.id.textTime);
+            etiDate = itemView.findViewById(R.id.textDate);
+            etiEdn = itemView.findViewById(R.id.textEdn);
         }
     }
 }
