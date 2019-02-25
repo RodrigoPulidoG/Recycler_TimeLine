@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void llenarListaEventos() {
-        listaEventos.add(new EventTimeLine(R.drawable.ic_launcher_background,"20 minutes ride","8th Junary","-10 000 COP"));
-        listaEventos.add(new EventTimeLine(R.drawable.ic_launcher_background,"15 minutes ride","8th Junary","-7 EDN"));
-        listaEventos.add(new EventTimeLine(R.drawable.ic_launcher_background,"Offer completed","7th Junary","+10 EDN"));
-        listaEventos.add(new EventTimeLine(R.drawable.ic_launcher_background,"10 minutes ride","th Junary","-5 EDN"));
-        listaEventos.add(new EventTimeLine(R.drawable.ic_launcher_background,"Offer completed","7th Junary","+3 EDN"));
+        listaEventos.add(new EventTimeLine(R.drawable.mono_patin,"20 minutes ride","8th Junary","-10 000 COP"));
+        listaEventos.add(new EventTimeLine(R.drawable.mono_patin,"15 minutes ride","8th Junary","-7 EDN"));
+        listaEventos.add(new EventTimeLine(R.drawable.regalo,"Offer completed","7th Junary","+10 EDN"));
+        listaEventos.add(new EventTimeLine(R.drawable.mono_patin,"10 minutes ride","7th Junary","-5 EDN"));
+        listaEventos.add(new EventTimeLine(R.drawable.regalo,"Offer completed","7th Junary","+3 EDN"));
 
     }
 }
